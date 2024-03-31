@@ -14,9 +14,9 @@ you can check wich folder ignore in .gitignore
 
 - Goal: Sentiment classification on open source datasets
 
-- Input: TSATC: Twitter Sentiment Analysis Training Corpus (to be detailed later)
+- Input: TSATC: Twitter Sentiment Analysis Training Corpus
 
-- Output: Training classifiers to classify the sentiment of tweets (to be detailed later)
+- Output: Training classifiers to classify the sentiment of tweets
 
 ### Tasks
 
@@ -48,3 +48,45 @@ Classification results
 - Recall
 - F-measure
 - Accuracy
+
+## Report - best model :
+
+##### Logistic Regression with TfidfVectorizer
+
+|              | precision | recall | f1-score | support |
+| :----------: | :-------: | :----: | -------- | ------- |
+|      0       |   0.78    |  0.76  | 0.77     | 30969   |
+|      1       |   0.76    |  0.79  | 0.78     | 31029   |
+|   accuracy   |           |        | 0.77     | 61998   |
+|  macro avg   |   0.77    |  0.77  | 0.77     | 61998   |
+| weighted avg |   0.77    |  0.77  | 0.77     | 61998   |
+
+##### BernoulliNB with TfidfVectorizer
+
+|              | precision | recall | f1-score | support |
+| :----------: | :-------: | :----: | -------- | ------- |
+|      0       |   0.77    |  0.75  | 0.76     | 30969   |
+|      1       |   0.76    |  0.78  | 0.77     | 31029   |
+|   accuracy   |           |        | 0.77     | 61998   |
+|  macro avg   |   0.77    |  0.77  | 0.77     | 61998   |
+| weighted avg |   0.77    |  0.77  | 0.77     | 61998   |
+
+##### Logistic Regression with CountVectorizer
+
+|              | precision | recall | f1-score | support |
+| :----------: | :-------: | :----: | -------- | ------- |
+|      0       |   0.75    |  0.75  | 0.77     | 30969   |
+|      1       |   0.80    |  0.80  | 0.78     | 31029   |
+|   accuracy   |           |        | 0.77     | 61998   |
+|  macro avg   |   0.77    |  0.77  | 0.77     | 61998   |
+| weighted avg |   0.77    |  0.77  | 0.77     | 61998   |
+
+##### BernoulliNB Regression with CountVectorizer
+
+|              | precision | recall | f1-score | support |
+| :----------: | :-------: | :----: | -------- | ------- |
+|      0       |   0.77    |  0.75  | 0.76     | 30969   |
+|      1       |   0.76    |  0.78  | 0.77     | 31029   |
+|   accuracy   |           |        | 0.77     | 61998   |
+|  macro avg   |   0.77    |  0.77  | 0.77     | 61998   |
+| weighted avg |   0.77    |  0.77  | 0.77     | 61998   |
