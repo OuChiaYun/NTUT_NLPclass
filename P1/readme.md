@@ -51,6 +51,8 @@ Classification results
 
 ## Report - best model :
 
+### Peformance
+
 ##### Logistic Regression with TfidfVectorizer
 
 |              | precision | recall | f1-score | support |
@@ -90,3 +92,41 @@ Classification results
 |   accuracy   |           |        | 0.77     | 61998   |
 |  macro avg   |   0.77    |  0.77  | 0.77     | 61998   |
 | weighted avg |   0.77    |  0.77  | 0.77     | 61998   |
+
+<br>
+<br>
+
+### The list we try and use :
+
+#### Data preprocessing way :
+
+|                    Way                     | Expected Use | Final Use |
+| :----------------------------------------: | :----------: | :-------: |
+|         Convert text to lowercase:         |      v       |     v     |
+|               Cleaning URLs                |      v       |     v     |
+|    Removing punctuation and odd symbols    |      v       |     v     |
+| Replacing consecutive repeating characters |      v       |     v     |
+|              Cleaning numbers              |      v       |     v     |
+|         Cleaning single characters         |      v       |     v     |
+|             Lemmatizing words              |      v       |     v     |
+|         Cleaning non-English words         |      v       |     v     |
+|           Cleaning extra spaces            |      v       |     v     |
+|              Set Unknown Word              |      v       |     v     |
+
+#### Text feature extraction methods :
+
+|       Way       | Expected Use | Final Use |
+| :-------------: | :----------: | :-------: |
+| TfidfVectorizer |      v       |     v     |
+| CountVectorizer |      v       |     v     |
+
+#### model:
+
+|           Way           | Expected Use | Final Use |
+| :---------------------: | :----------: | :-------: |
+|   Logistic Regression   |      v       |     v     |
+|  Gaussian Naive Bayes   |      v       |     v     |
+|  Bernoulli Naive Bayes  |      v       |     v     |
+| Multinomial Naive Bayes |      v       |     v     |
+|           SVM           |      v       | too long  |
+|        K-nearst         |      v       | too long  |
