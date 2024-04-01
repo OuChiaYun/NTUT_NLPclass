@@ -53,6 +53,15 @@ Classification results
 
 ### Peformance
 
+Classification results
+
+- Precision = 0.77
+- Recall = 0.77
+- F-measure = 0.77
+- Accuracy = 0.77
+
+\*\*因為最好結果所有印出來的都是 0.77，故此處寫 0.77
+
 ##### Logistic Regression with TfidfVectorizer
 
 |              | precision | recall | f1-score | support |
@@ -100,18 +109,18 @@ Classification results
 
 #### Data preprocessing way :
 
-|                    Way                     | Expected Use | Final Use |
-| :----------------------------------------: | :----------: | :-------: |
-|         Convert text to lowercase:         |      v       |     v     |
-|               Cleaning URLs                |      v       |     v     |
-|    Removing punctuation and odd symbols    |      v       |     v     |
-| Replacing consecutive repeating characters |      v       |     v     |
-|              Cleaning numbers              |      v       |     v     |
-|         Cleaning single characters         |      v       |     v     |
-|             Lemmatizing words              |      v       |     v     |
-|         Cleaning non-English words         |      v       |     v     |
-|           Cleaning extra spaces            |      v       |     v     |
-|              Set Unknown Word              |      v       |     v     |
+|                    Way                     | Expected Use |    Final Use    |
+| :----------------------------------------: | :----------: | :-------------: |
+|         Convert text to lowercase:         |      v       |        v        |
+|               Cleaning URLs                |      v       |        v        |
+|    Removing punctuation and odd symbols    |      v       |        v        |
+| Replacing consecutive repeating characters |      v       |        v        |
+|              Cleaning numbers              |      v       |        v        |
+|         Cleaning single characters         |      v       |        v        |
+|             Lemmatizing words              |      v       |        v        |
+|         Cleaning non-English words         |      v       |        v        |
+|           Cleaning extra spaces            |      v       |        v        |
+|              Set Unknown Word              |      v       | x too long time |
 
 #### Text feature extraction methods :
 
@@ -122,11 +131,13 @@ Classification results
 
 #### model:
 
-|           Way           | Expected Use | Final Use |
-| :---------------------: | :----------: | :-------: |
-|   Logistic Regression   |      v       |     v     |
-|  Gaussian Naive Bayes   |      v       |     v     |
-|  Bernoulli Naive Bayes  |      v       |     v     |
-| Multinomial Naive Bayes |      v       |     v     |
-|           SVM           |      v       | too long  |
-|        K-nearst         |      v       | too long  |
+|           Way           | Expected Use |    Final Use    |
+| :---------------------: | :----------: | :-------------: |
+|   Logistic Regression   |      v       |        v        |
+|  Gaussian Naive Bayes   |      v       |        v        |
+|  Bernoulli Naive Bayes  |      v       |        v        |
+| Multinomial Naive Bayes |      v       |        v        |
+|           SVM           |      v       | x too long time |
+|        K-nearst         |      v       | x too long time |
+
+extra knowledge we use : word cloud、CountVectorizer
