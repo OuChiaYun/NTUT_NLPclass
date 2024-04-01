@@ -1,6 +1,6 @@
 # NLP class
 
-### This Repositories is for NLP (Neuro-Linguistic Programming) class
+### This Repositories is for NLP (Natural Language Processing) class
 
 ### Team Member : 110590450 歐佳昀 110590450 莊于潔
 
