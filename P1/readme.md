@@ -120,6 +120,7 @@ Classification results
 |             Lemmatizing words              |      v       |        v        |
 |         Cleaning non-English words         |      v       |        v        |
 |           Cleaning extra spaces            |      v       |        v        |
+|          Word Cloud Visualization          |      v       |        v        |
 |              Set Unknown Word              |      v       | x too long time |
 
 #### Text feature extraction methods :
@@ -138,6 +139,6 @@ Classification results
 |  Bernoulli Naive Bayes  |      v       |        v        |
 | Multinomial Naive Bayes |      v       |        v        |
 |           SVM           |      v       | x too long time |
-|        K-nearst         |      v       | x too long time |
+|   k-Nearest Neighbors   |      v       | x too long time |
 
 extra knowledge we use : word cloud、CountVectorizer
