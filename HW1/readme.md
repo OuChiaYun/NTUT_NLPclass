@@ -44,6 +44,11 @@ Classification results
 - F-measure
 - Accuracy
 
+data 下載區域 :
+https://github.com/cblancac/SentimentAnalysisBert/tree/main/data
+
+![alt text](snapshot/image.png)
+
 ## Report - best model :
 
 ### Peformance
@@ -152,7 +157,6 @@ Classification results
 |  Gaussian Naive Bayes   |      v       |        v        |
 |  Bernoulli Naive Bayes  |      v       |        v        |
 | Multinomial Naive Bayes |      v       |        v        |
-|           SVM           |      v       | x too long time |
 |   k-Nearest Neighbors   |      v       | x too long time |
 
 extra knowledge we use : word cloud、TfidfVectorizer
