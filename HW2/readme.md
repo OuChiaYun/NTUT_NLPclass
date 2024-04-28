@@ -120,19 +120,23 @@ word embeding :
 
 - (1)
 
-  model name : word2vec\
-  diff_abs 平均值： 1.4509204857488973\
-  SignificanceResult(statistic=0.6268452869603629, pvalue=2.0921814402157865e-26)
+  model name : word2vec
+
+  diff_abs 平均值： 1.3917418687971976
+
+  SignificanceResult(statistic=0.6845969668422078, pvalue=1.016190193647808e-49)
 
   => 強相關
 
 - (2)
 
-  model name : GLoVe\
-  diff_abs 平均值： 1.557095181732895\
-  SignificanceResult(statistic=0.4955473036905242, pvalue=4.864178084843842e-14)
+  model name : GLoVe
 
-  => 中等強相關
+  diff_abs 平均值： 1.4636849824143916
+
+  SignificanceResult(statistic=0.5987723194963509, pvalue=1.0213953289911825e-35)
+
+  => 中等強相關(近強相關)
 
 #### Task 3 :
 
