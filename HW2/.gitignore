@@ -2,6 +2,7 @@ data/
 other_data/
 playground/
 model/
+resource/
 
 *.docx
 *.pptx
