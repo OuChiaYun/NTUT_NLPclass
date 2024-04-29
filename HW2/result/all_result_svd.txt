@@ -1,0 +1,84 @@
+data/BATS\1_Inflectional_morphology: category  [noun - plural_reg]
+total accuracy  -  total: 11 ps: 11 lm: 11 data: 50
+total: 0.22
+Stemming: 0.22
+Lemmatization: 0.22
+
+data/BATS\1_Inflectional_morphology: category  [noun - plural_irreg]
+total accuracy  -  total: 7 ps: 7 lm: 0 data: 50
+total: 0.14
+Stemming: 0.14
+Lemmatization: 0.0
+
+data/BATS\1_Inflectional_morphology: category  [verb_inf - 3psg]
+total accuracy  -  total: 3 ps: 7 lm: 3 data: 50
+total: 0.06
+Stemming: 0.14
+Lemmatization: 0.06
+
+data/BATS\2_Derivational_morphology: category  [noun - less_reg]
+total accuracy  -  total: 0 ps: 1 lm: 1 data: 50
+total: 0.0
+Stemming: 0.02
+Lemmatization: 0.02
+
+data/BATS\2_Derivational_morphology: category  [un - adj_reg]
+total accuracy  -  total: 3 ps: 4 lm: 3 data: 50
+total: 0.06
+Stemming: 0.08
+Lemmatization: 0.06
+
+data/BATS\2_Derivational_morphology: category  [over - adj_reg]
+total accuracy  -  total: 2 ps: 3 lm: 2 data: 50
+total: 0.04
+Stemming: 0.06
+Lemmatization: 0.04
+
+data/BATS\2_Derivational_morphology: category  [adj - ness_reg]
+total accuracy  -  total: 0 ps: 1 lm: 0 data: 50
+total: 0.0
+Stemming: 0.02
+Lemmatization: 0.0
+
+data/BATS\2_Derivational_morphology: category  [re - verb_reg]
+total accuracy  -  total: 0 ps: 2 lm: 0 data: 50
+total: 0.0
+Stemming: 0.04
+Lemmatization: 0.0
+
+data/BATS\3_Encyclopedic_semantics: category  [country - capital]
+total accuracy  -  total: 1 ps: 1 lm: 1 data: 50
+total: 0.02
+Stemming: 0.02
+Lemmatization: 0.02
+
+data/BATS\3_Encyclopedic_semantics: category  [country - language]
+total accuracy  -  total: 2 ps: 2 lm: 2 data: 50
+total: 0.04
+Stemming: 0.04
+Lemmatization: 0.04
+
+data/BATS\3_Encyclopedic_semantics: category  [name - nationality]
+total accuracy  -  total: 0 ps: 1 lm: 1 data: 50
+total: 0.0
+Stemming: 0.02
+Lemmatization: 0.02
+
+data/BATS\3_Encyclopedic_semantics: category  [name - occupation]
+total accuracy  -  total: 0 ps: 1 lm: 1 data: 50
+total: 0.0
+Stemming: 0.02
+Lemmatization: 0.02
+
+data/BATS\3_Encyclopedic_semantics: category  [things - color]
+total accuracy  -  total: 1 ps: 1 lm: 1 data: 50
+total: 0.02
+Stemming: 0.02
+Lemmatization: 0.02
+
+data/BATS\3_Encyclopedic_semantics: category  [male - female]
+total accuracy  -  total: 1 ps: 1 lm: 1 data: 50
+total: 0.02
+Stemming: 0.02
+Lemmatization: 0.02
+
