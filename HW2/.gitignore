@@ -3,6 +3,7 @@ other_data/
 playground/
 model/
 resource/
+glove.6B/
 
 *.docx
 *.pptx
