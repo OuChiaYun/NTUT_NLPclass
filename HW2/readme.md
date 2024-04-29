@@ -101,7 +101,7 @@ Please focus on the categories with nonzero accuracies
 
 word embeding :
 
-- wrod2vec
+- word2vec
 - https://github.com/mmihaltz/word2vec-GoogleNews-vectors/blob/master/README.md
 - https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing
 
