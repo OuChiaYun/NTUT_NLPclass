@@ -1,2 +1,2 @@
 # pre-train-model filter=lfs diff=lfs merge=lfs -text
-pre-train-model/* filter=lfs diff=lfs merge=lfs -text
+pre-train-model/GoogleNews-vectors-negative300.bin.gz filter=lfs diff=lfs merge=lfs -text
