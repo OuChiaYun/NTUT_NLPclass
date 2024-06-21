@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <title>Search</title>
+  </head>
+  <body class="flex h-screen w-full">
+    <div class="bg-sky-200 h-fit w-full grow">
+      <div
+        class="bg-sky-900 text-6xl font-serif font-bold text-white h-40 flex items-center justify-center shadow-zinc-600 shadow-sm"
+      >
+        I like to movie it, movie it.
+      </div>
+      <div class="h-fit flex w-full p-20 ">
+        <div class="bg-sky-400 w-full flex items-center justify-center p-3 rounded-lg shadow-lg hover:shadow-zinc-500 duration-300">
+          <div class=" w-full">
+            
+            <form action="/search_submit" method="post">
+            <h2 class="text-center text-white font-serif text-3xl">
+              Search for Movies
+            </h2>
+            <div class="flex flex-col space-y-4">
+                <p>
+                  <input
+                    type="text"
+                    name="search_query"
+                    class="w-full h-14 text-center text-lg text-sky-950 font-bold"
+                  />
+                </p>
+                <div class="w-full flex items-center justify-center">
+                  <button
+                    type="submit"
+                    value="Search"
+                    class="w-60 bg-sky-600 text-white text-xl font-serif rounded-lg hover:bg-white hover:text-sky-600"
+                  />submit
+                </div>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+
+      <div class="font-serif w-full text-center text-white text-2xl flex items-center justify-center">
+        <div class="bg-sky-600 rounded-lg  p-2">ALL Movies</div></div>
+      <div class="h-fit p-2 w-screen flex-wrap  flex space-x-2 space-y-1 text-center items-center justify-center ">
+      {% for movie in movies %}
+      <a href="{{ url_for('show_recommendations', title=movie.Title ) }}">
+      <div class=" hover:text-white hover:bg-sky-500 text-sky-500 text-lg bg-white w-fit font-serif rounded-lg p-2 shadow-lg shadow-zinc-400 hover:shadow-lg hover:shadow-zinc-600 duration-300 ">{{ movie.Title }} directed by {{ movie.Director }}</div>
+      </a>
+      {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

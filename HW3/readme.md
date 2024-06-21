@@ -58,6 +58,14 @@ Weighted Average F1 Score: 0.928
 
 ### 其餘成果展示
 
+|                       資料處理與使用                        |
+| :---------------------------------------------------------: |
+|                 資料及切分，去除不合規格式                  |
+| 格式轉換 : iob 格式轉換，其符合 spaCy、NLTK、CRF 之輸入格式 |
+|                           k -fold                           |
+|               word2features 取小寫 (with CRF)               |
+|              word2features 提取特徵 (with CRF)              |
+
 - spacy
 
 ============================================
@@ -93,10 +101,10 @@ weightavg accuracy : 0.393
 ============================================
 
 spaCy (train for command - dev for command - test): \
-Accuracy: 0.781 \
-Weighted Average Precision: 0.879 \
-Weighted Average Recall: 0.825 \
-Weighted Average F1 Score: 0.850
+Accuracy: 0.540\
+Weighted Average Precision: 0.670\
+Weighted Average Recall: 0.596\
+Weighted Average F1 Score: 0.623
 
 ============================================
 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <title>Recommendations for title</title>
+  </head>
+  <body class="flex h-fit min-h-screen w-full">
+    <div class="bg-sky-200 h-full w-full">
+      <div
+        class="bg-sky-900 text-6xl font-serif font-bold text-white h-40 flex items-center justify-center shadow-zinc-600 shadow-sm"
+      >
+        I like to movie it, movie it.
+      </div>
+      <div class="w-full h-fit p-2 space-y-2">
+        <div class="flex space-x-2">
+          <div
+            class="bg-purple-600 w-full text-white p-1 rounded-lg font-serif space-y-2"
+          >
+            <p
+              class="shadow-zinc-600 shadow-sm text-2xl bg-white text-purple-600 p-1 rounded-lg items-center justify-center text-center folt-bold"
+            >
+              {{movie_details['Title']}}
+            </p>
+
+            <div>
+              <p><strong>Director:</strong> {{movie_details['Director']}}</p>
+              <p><strong>Actors:</strong> {{movie_details['Actors']}}</p>
+              <p><strong>Genre:</strong> {{movie_details['Genre']}}</p>
+              <p><strong>Year:</strong> {{movie_details['Year']}}</p>
+              <p><strong>Rating:</strong> {{movie_details['imdbRating']}}</p>
+              <p><strong>Rated:</strong> {{movie_details['Rated']}}</p>
+              <p><strong>Released:</strong> {{movie_details['Released']}}</p>
+              <p><strong>Runtime:</strong> {{movie_details['Runtime']}}</p>
+              <p><strong>Language:</strong> {{movie_details['Language']}}</p>
+              <p><strong>Country:</strong> {{movie_details['Country']}}</p>
+              <p><strong>Awards:</strong> {{movie_details['Awards']}}</p>
+              <p>
+                <strong>Website:</strong><a href = {{ movie_details['Website']}}
+                class="underline">{{ movie_details['Website']}}
+              </a>
+              </p>
+
+              <p><strong>Plot:</strong>{{ movie_details['Plot']}}</p>
+            </div>
+          </div>
+          <div>
+            <img src={{movie_details['Poster']}} alt="Movie Image" class="
+            rounded-lg" />
+          </div>
+        </div>
+
+        <div class="bg-red-400 w-full flex flex-col space-y-1 p-1 rounded-lg">
+          <p class="bg-white rounded-lg p-1 text-red-500 text-2xl font-serif shadow-zinc-600 shadow-sm">
+            Recommendations - Base on Plot
+          </p>
+          <ul class="flex-col space-y-1">
+            {% for movie, score, genre in movies %}
+            
+            <a href="{{ url_for('show_recommendations', title=movie) }}">
+            <li class="bg-red-400 text-white rounded-lg p-1 hover:bg-red-500">
+                {{ movie }} - Similary Score: {{ score }} - Genre: {{ genre }}
+                
+            </li>
+              </a>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="h-fit flex items-center justify-center p-2">
+        <a
+          href="/"
+          class="font-serif  bg-red-600 text-white rounded-lg p-2 hover:bg-white hover:text-red-600 shadow-zinc-600 shadow-sm"
+          >Back to Search
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

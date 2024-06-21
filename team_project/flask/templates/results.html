@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <title>Search Results</title>
+  </head>
+  <body class="flex h-fit w-full">
+    <div class="bg-sky-200 h-full w-full grow min-h-screen">
+      <div
+        class="bg-sky-900 text-6xl font-serif font-bold text-white h-40 flex items-center justify-center shadow-zinc-600 shadow-sm"
+      >
+        I like to movie it, movie it.
+      </div>
+      <div class="w-full p-2 flex items-center justify-center space-x-2">
+        <div
+          class="bg-sky-400 flex rounded-lg p-2 items-center justify-center space-x-2"
+        >
+          <div class="text-white font-serif">Search Results for</div>
+          <div
+            class="bg-white text-sky-950 rounded-lg p-1 shadow-zinc-600 shadow-sm"
+          >
+            {{ query }}
+          </div>
+        </div>
+
+        <a
+          href="/"
+          class="font-serif bg-red-600 text-white rounded-lg p-2 hover:bg-white hover:text-red-600 shadow-zinc-600 shadow-sm"
+          >Back to Search</a
+        >
+      </div>
+      <div class="p-6 flex-col space-y-2">
+        <div class="w-full flex items-center justify-center">
+          <div
+            class="bg-amber-400 rounded-lg p-2 w-fit text-white font-serif flex items-center space-x-2"
+          >
+            <p>NER Results :</p>
+            <div class="flex space-x-2 items-center">
+              <div class="text-white font-bold">Actors</div>
+              <div
+                class="text-lime-500 bg-white p-1 rounded-lg shadow-zinc-600 shadow-sm"
+              >
+                {{ actors }}
+              </div>
+            </div>
+            <div class="flex space-x-2 items-center">
+              <div class="text-white font-bold">Director</div>
+              <div
+                class="text-violet-500 bg-white p-1 rounded-lg shadow-zinc-600 shadow-sm"
+              >
+                {{ directors }}
+              </div>
+            </div>
+            <div class="flex space-x-2 items-center">
+              <div class="text-white font-bold">Years</div>
+              <div
+                class="text-sky-500 bg-white p-1 rounded-lg shadow-zinc-600 shadow-sm"
+              >
+                {{ years }}
+              </div>
+            </div>
+            <div class="flex space-x-2 items-center">
+              <div class="text-white font-bold">Genres</div>
+              <div
+                class="text-pink-500 bg-white p-1 rounded-lg shadow-zinc-600 shadow-sm"
+              >
+                {{ genres }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="flex-col flex space-y-2">
+          {% for result in results %}
+          <li
+            class="{% if 'Actors' in result[0] %} bg-lime-500 {% elif 'Director' in result[0] %} bg-violet-500 {% elif 'Year' in result[0] %} bg-sky-500 {% elif 'Genre' in result[0] %} bg-pink-500 {% else %} bg-green-400 {% endif %} w-full text-white p-2 rounded-lg font-serif shadow-zinc-600 shadow-sm"
+          >
+            <div>
+              <strong>Movie Title :</strong>
+              {{ result[1] }}<br />
+              <strong>Director :</strong>
+              {{ result[2] }}<br />
+              <strong>Actors :</strong>
+              {{ result[3] }}<br />
+              <strong>Genre :</strong>
+              {{ result[4] }}<br />
+              <strong>Year :</strong>
+              {{ result[5] }}<br />
+              <strong>Plot :</strong>
+              {{ result[6] }}<br />
+            </div>
+            <div class="flex justify-end">
+              <a
+                href="{{ url_for('show_recommendations', title=result[1]) }}"
+                class="bg-red-400 text-white p-2 rounded-lg font-serif shadow-red-800 shadow-sm hover:bg-white hover:text-red-400"
+                >See More</a
+              >
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
