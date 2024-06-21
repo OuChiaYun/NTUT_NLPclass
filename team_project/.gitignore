@@ -5,6 +5,6 @@ pre-train-model/
 # matrix/
 # IMDB/
 # flask/
-dataset_MIT/
-data_hugging_face/
-project_detail/
+# dataset_MIT/
+# data_hugging_face/
+# project_detail/
