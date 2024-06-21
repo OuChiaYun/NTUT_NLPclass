@@ -1,9 +1,9 @@
-STR-2022/
-spacy_model/
-self-train-model/
+# STR-2022/
+# spacy_model/
+# self-train-model/
 pre-train-model/
-matrix/
-IMDB/
+# matrix/
+# IMDB/
 # flask/
 dataset_MIT/
 data_hugging_face/
