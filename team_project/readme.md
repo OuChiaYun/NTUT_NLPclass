@@ -1,6 +1,6 @@
 ### team_project
 
-## google 雲端(含資料集等完整連結)
+## \*\*推薦 google 雲端(含資料集等完整連結)
 
 https://drive.google.com/file/d/1cCnSYklSDMNmMxgTCPJJqkViLFonfqtj/view?usp=sharing
 
@@ -13,6 +13,8 @@ https://drive.google.com/file/d/1cCnSYklSDMNmMxgTCPJJqkViLFonfqtj/view?usp=shari
 期末專案位於 team_project 資料夾
 
 需手動下載 pre-train-model 內容，置於 pre-train-model 底下
+
+![alt text](image/image.png)
 ![alt text](image/image.png)
 
 ## 本地端網頁(搜尋應用)
