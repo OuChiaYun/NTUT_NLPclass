@@ -14,7 +14,7 @@ https://drive.google.com/file/d/1_YPf1VnpE8mpyDKQwfLJ8XPmN7DgLyvx/view?usp=shari
 
 需手動下載 pre-train-model 內容，置於 pre-train-model 底下
 
-![alt text](image/image.png)
+![alt text](image/image1.png)
 ![alt text](image/image.png)
 
 ## 本地端網頁(搜尋應用)
